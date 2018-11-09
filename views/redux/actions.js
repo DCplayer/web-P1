@@ -40,7 +40,7 @@ function shouldFetchApps(state) {
   if (apps.length == 0) {
     return true;
   } else if (state.isFetching) {
-    return false;
+    return false; 
   }
 }
 
