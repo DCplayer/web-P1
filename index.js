@@ -14,11 +14,9 @@ app.disable('x-powered-by');
 app.listen(process.env.PORT || 3000);
 
 // our apps data model
-const data = require('./assets/data.json');
 
 let initialState = {
-  isFetching: false,
-  apps: data
+  isFetching: false
 }
 
 //SSR function import
