@@ -15,6 +15,7 @@ app.get("*", (req, res) => {
         <link rel="stylesheet" href="/css/main.css">
         <script src="/bundle.js" defer></script>
       </head>
+
       <body>
         <div id="root">${renderToString(<App />)}</div>
       </body>
