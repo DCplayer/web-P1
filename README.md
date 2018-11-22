@@ -1,29 +1,15 @@
-# Server Side Rendering
+# React Boilerplate
 
-ReactCasts, episode 12.
-
-Server Side rendering means rendering your React components on the Server, and sending HTML pages pre-populated - This can lead to a better user experience and Search Engine discoverability.
+Putting together the lessons seeing in "Web systems and technologies", to create a boilerplate for react .
 
 On the browser, when the javascript runs, react will realise that the component is already there and take over for front-end interactivity, skipping the initial render.
 
-
-Screencast video:
-https://youtu.be/tsEHfL-Ul1Y
-
-# Outline
-
-- Server side rendering benefits
-
-- Build Systems
-
-- Code organization (browser, server & shared)
-
-- Webpack configuration
-
-- browser-specific code
-
-- Server code (including express)
-
+# Content
+- React
+- Webpack
+- Babel
+- ESlint
+- Server side rendering 
 
 # Build & Run Instructions
 
