@@ -24475,7 +24475,7 @@ var app = __WEBPACK_IMPORTED_MODULE_0_express___default.a();
 app.use(__WEBPACK_IMPORTED_MODULE_0_express___default.a.static("public"));
 
 app.get("*", function (req, res) {
-  res.send("\n      <!DOCTYPE html>\n      <head>\n        <title>Universal Reacl</title>\n        <link rel=\"stylesheet\" href=\"/css/main.css\">\n        <script src=\"/bundle.js\" defer></script>\n      </head>\n\n      <body>\n        <div id=\"root\">" + __WEBPACK_IMPORTED_MODULE_2_react_dom_server__["renderToString"](__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__shared_App__["a" /* default */], {
+  res.send("\n      <!DOCTYPE html>\n      <head>\n        <title>Webpack BoilerPlate</title>\n        <link rel=\"stylesheet\" href=\"/css/main.css\">\n        <script src=\"/bundle.js\" defer></script>\n      </head>\n\n      <body>\n        <div id=\"root\">" + __WEBPACK_IMPORTED_MODULE_2_react_dom_server__["renderToString"](__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__shared_App__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
@@ -74119,68 +74119,56 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var App = function (_Component) {
-  _inherits(App, _Component);
+var App = function (_React$Component) {
+  _inherits(App, _React$Component);
 
-  function App() {
+  function App(props) {
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+    _this.state = {
+      clicks: 0
+    };
+
+    return _this;
   }
 
   _createClass(App, [{
+    key: "handleClick",
+    value: function handleClick(interaction) {
+      this.setState({
+        clicks: this.state.clicks + 1
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
         { className: "App", __source: {
             fileName: _jsxFileName,
-            lineNumber: 8
+            lineNumber: 23
           },
           __self: this
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "App-header", __source: {
+          "button",
+          { className: "clicker", id: "clicker", onClick: this.handleClick.bind(this, "click"), __source: {
               fileName: _jsxFileName,
-              lineNumber: 9
+              lineNumber: 24
             },
             __self: this
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_1__logo_svg___default.a, className: "App-logo", alt: "logo", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 10
-            },
-            __self: this
-          }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "h2",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 11
-              },
-              __self: this
-            },
-            "Welcome to React in the Server"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          { className: "App-intro", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 13
-            },
-            __self: this
-          },
-          "Isn't this cool?"
+          this.state.clicks,
+          " Clicks"
         )
       );
     }
   }]);
 
   return App;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["a"] = (App);
 

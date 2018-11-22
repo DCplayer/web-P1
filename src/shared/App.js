@@ -2,15 +2,26 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      clicks: 0
+    }
+
+  }
+
+  handleClick(interaction){
+    this.setState({
+      clicks: this.state.clicks + 1
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React in the Server</h2>
-        </div>
-        <p className="App-intro">Isn't this cool?</p>
+        <button className="clicker" id="clicker" onClick={this.handleClick.bind(this, "click")}>{this.state.clicks} Clicks</button>
       </div>
     );
   }

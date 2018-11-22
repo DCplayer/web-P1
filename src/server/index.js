@@ -11,7 +11,7 @@ app.get("*", (req, res) => {
   res.send(`
       <!DOCTYPE html>
       <head>
-        <title>Universal Reacl</title>
+        <title>Webpack BoilerPlate</title>
         <link rel="stylesheet" href="/css/main.css">
         <script src="/bundle.js" defer></script>
       </head>
