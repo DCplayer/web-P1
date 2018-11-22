@@ -1,12 +1,16 @@
 
 .App {
+
   text-align: center;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  top: 50px;
+  padding: 250px 0; 
 }
 
 .clicker{
+  height: 50px;
   flex: 1 1 1; 
   align-self: center;
   text-align: center;
