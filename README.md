@@ -32,4 +32,7 @@ npm install
 npm run start-dev
 ```
 
-5. Abrir localhost:3000 en el browser de su gusto. 
+5. Abrir la direccion en el browser de su gusto. 
+```
+localhost:3000
+```
