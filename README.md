@@ -19,19 +19,19 @@ En computación, un boilerplate es una unidad de escritura que puede ser reusada
 
 1. Asegurarse de tener instalado [npm](https://www.npmjs.com) para el manejo de paquetes a usar. 
 
-2. Abrir la consola, ya sea windows con cmd o en linux y mac con Bash
+2. Abrir la consola, ya sea windows con cmd o en linux y mac con Bash.
 
-3. Instalar los paquetes del proyecto
+3. Instalar los paquetes del proyecto.
 ```
 npm install
 ```
 
-4. Correr la aplicacion
+4. Correr la aplicación.
 ```
 npm run start-dev
 ```
 
-5. Abrir la direccion en el browser de su gusto. 
+5. Abrir la dirección en el browser de su gusto. 
 ```
 localhost:3000
 ```
