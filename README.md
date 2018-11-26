@@ -16,6 +16,15 @@ En computación, un boilerplate es una unidad de escritura que puede ser reusada
 - Server side rendering"
 
 # Instalación
+Cabe aclarar que le demo funcionara para sistemas linux. Esto es por una instruccion dentro de package.json 
+```
+"start-dev": "NODE_ENV=development webpack -w & NODE_ENV=development node server.js",
+```
+Para la cual, en Windows, se tendria que poner como: 
+```
+"start-dev": "SET NODE_ENV=development webpack -w & SET NODE_ENV=development node server.js",
+```
+Por lo cual, y dado que la computadora donde fue creado tiene como Sistema Operativo Linux, se decidio tomar la primera opcion y se anima al usuario a cambiarlo de ser necesario para utilizarlo en otro Sistema Operativo
 
 1. Asegurarse de tener instalado [npm](https://www.npmjs.com) para el manejo de paquetes a usar. 
 
